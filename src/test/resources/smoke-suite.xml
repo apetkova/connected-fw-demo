@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestCon Moscow Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="testng.TestNgAnnotationTransformer"/>
+        <listener class-name="testng.CustomListener"/>
+    </listeners>
+
+    <test name="Login Test">
+        <classes>
+            <class name="smoke.LoginTests"/>
+        </classes>
+    </test>
+</suite>
